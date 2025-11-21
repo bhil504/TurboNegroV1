@@ -1,0 +1,12 @@
+# ============================================
+# Netlify config for Turbo Negro V1
+# Enables CORS so the game boots correctly
+# when launched from bhilliondollar.com
+# ============================================
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, POST, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type"
